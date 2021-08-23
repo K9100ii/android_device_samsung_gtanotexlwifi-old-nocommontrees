@@ -1,4 +1,4 @@
-#define LOG_TAG "android.hardware.gnss@1.0-service.gtaxlwifi"
+#define LOG_TAG "android.hardware.gnss@1.0-service.gtanotexlwifi"
 
 #include <android/hardware/gnss/1.0/IGnss.h>
 

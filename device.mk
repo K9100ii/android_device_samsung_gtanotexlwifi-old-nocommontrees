@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/samsung/gtaxlwifi
+LOCAL_PATH := device/samsung/gtanotexlwifi
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -252,7 +252,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-service.gtaxlwifi \
+    android.hardware.gnss@1.0-service.gtanotexlwifi \
     libsecril-client
 
 # Keys
@@ -278,7 +278,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service.gtaxlwifi
+    android.hardware.sensors@1.0-service.gtanotexlwifi
 
 # Trust HAL
 PRODUCT_PACKAGES += \
