@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/gtaxlwifi
+LOCAL_PATH := device/samsung/gtanotexlwifi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -235,6 +235,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/configs/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sec_touchscreen.kl
 
+# IDC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sec_e-pen.idc
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.samsung
@@ -242,7 +246,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service.gtaxlwifi
+    android.hardware.sensors@1.0-service.gtanotexlwifi
 
 # Trust HAL
 PRODUCT_PACKAGES += \
